@@ -1,6 +1,36 @@
 {% extends 'learning_logs/base.html' %}
 
 {% block content %}
-<p>Leraning Log</p>
-<p>Learning Log helps you keep tarck of your learning, for any topic you're learning about.</p>
+{% if user.is_authenticated %}
+<div class="container-fluid justify-content-center bg-dark-0 shadow-lg p-4 my-2">
+    <h4 class="text-primary">Hello, {{user.username|title}}</h4>
+    <p class="text-white-50">Welcome to learning_logs page, endevor to realize your potential.</p>
+</div>
+{% endif %}
+<div class="container-fluid justify-content-center bg-dark shadow-lg p-4 my-2 ">
+    <h3 class="text-warning">Learning Log</h3>
+    <p class="text-white-50">Learning Log helps you keep track of your learning, for any topic you're learning about.</p>
+    <p class="text-white-50">"What am I building? What am I breaking? What am I learning?" This site serves as a public accountability log and personal reference guide. Dive into the archives to see the evolution of your progress.</p>
+</div>
+<div class="container-fluid justify-content-center bg-dark-0 shadow-lg p-4 my-2">
+    <div class="container-fluid bg-dark text-light">
+        <h3 class="text-warning text-center">Features</h3>
+        <p class="text-light">The platform provide several Features:</p>
+    </div>
+    <div class="row container-fluid bg-dark my-2">
+        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+            <h4 class="text-warning text-center">Control</h4>
+            <p class="text-white-50">Users will be able to edit their entries personally.A user can do the editing unlimited times without interferance.This is advantagers for doing correction during reviews.</p>
+        </div>
+        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+            <h4 class="text-warning text-center">Privacy</h4>
+            <p class="text-white-50">Each user is able to own his/her entities and each one of them will only see their entries.User will edit his/her own entries and not even the developer will view the work.</p>
+        </div>
+        <div class="col-md-3 shadow-sm bg-white-70 container p-4 m-3">
+            <h4 class="text-warning text-center">Integrity</h4>
+            <p class="text-white-50">The site ensures that each users information remain how it is from the time of registering, loging in, creating their topics and entries and throught your journey in the site.</p>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

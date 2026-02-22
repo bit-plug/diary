@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #Third party apps
+    'django_bootstrap5',
+
+     #My apps
     'learning_logs',
     'users',
 ]
@@ -117,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+LOGIN_URL = '/users/login/'
+
+BOOTSTRAP5 = {
+    'include_jquery':True,
+}
