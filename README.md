@@ -93,8 +93,3 @@ learning_log/
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Built following the Django tutorial from "Python Crash Course" by Eric Matthes.</content>
-<parameter name="filePath">/home/nathan/repos/learnig_log/learning_log/README.md
